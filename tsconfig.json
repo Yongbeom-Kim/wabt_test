@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "target": "es2017",
+        "module": "esnext",
+        "target": "ES2022",
         "esModuleInterop": true,
         "moduleResolution": "node"
     }
