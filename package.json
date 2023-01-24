@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "build": "esbuild index.ts --bundle --platform=node --outfile=index.js --format=esm --watch",
-    "run": "node ./index.js"
+    "build": "npm run build0 & npm run build1 & npm run build2",
+    "build0": "esbuild index.ts --bundle --platform=node --format=iife --outfile=dst/index.js",
+    "build1": "esbuild index_1.ts --bundle --platform=node --format=iife --outfile=dst/index_1.js ",
+    "build2": "esbuild index_2.ts --bundle --platform=node --format=iife --outfile=dst/index_2.js "
   },
   "author": "",
   "license": "ISC",
